@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <form method="post">
+      <div class="form-group">
+        <label for="age">Idade:</label>
+        <input type="number" class="form-control" id="age" name="age" required>
+      </div>
+
+      <div class="form-group">
+        <label for="weight">Peso:</label>
+        <input type="number" class="form-control" id="weight" name="weight" required>
+      </div>
+
+      <div class="form-group">
+        <label for="height">Altura:</label>
+        <input type="number" class="form-control" id="height" name="height" required>
+      </div>
+
+      <div class="form-group">
+        <label>Idade da menarca:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="menarch_age" id="menarch_age1" value=1 required>
+          <label class="form-check-label" for="menarch_age1">
+            Menor ou igual a 11 anos.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="menarch_age" id="menarch_age2" value=1 required>
+          <label class="form-check-label" for="menarch_age2">
+            De 12 a 13 anos.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="menarch_age" id="menarch_age3" value=0 required>
+          <label class="form-check-label" for="menarch_age3">
+            Outro.
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Tem filhos ?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="childrens" id="childrens1" value=1 required>
+          <label class="form-check-label" for="childrens1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="childrens" id="childrens2" value=0 required>
+          <label class="form-check-label" for="childrens2">
+            Não.
+          </label>
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <label>Idade do primeiro filho: </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="live_birth_age" id="live_birth_age1" value=0 required>
+          <label class="form-check-label" for="live_birth_age1">
+            Menos de 20 anos.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="live_birth_age" id="live_birth_age2" value=1 required>
+          <label class="form-check-label" for="live_birth_age2">
+            De 20 a 24 anos.
+          </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="live_birth_age" id="live_birth_age3" value=2 required>
+        <label class="form-check-label" for="live_birth_age3">
+            De 25 a 29 anos.
+        </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="live_birth_age" id="live_birth_age4" value=3 required>
+        <label class="form-check-label" for="live_birth_age4">
+            A partir de 30 anos.
+        </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="menopause">Idade da menopausa:</label>
+        <input type="text" class="form-control" id="menopause" name="menopause" required>
+      </div>
+
+      <div class="form-group">
+        <label for="menopause">Birads da última mamografia:</label>
+        <input type="text" class="form-control" id="mammo" name="mammo" required>
+      </div>
+
+      <div class="form-group">
+        <label>Hiperplasia atípica? </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ihyp" id="ihyp1" value=1 required>
+          <label class="form-check-label" for="ihyp1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ihyp" id="ihyp2" value=0 required>
+          <label class="form-check-label" for="ihyp2">
+            Não
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Já tomou anticoncepcionais?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="contraceptive" id="contraceptive1" value=1 required>
+          <label class="form-check-label" for="contraceptive1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="contraceptive" id="contraceptive2" value=0 required>
+          <label class="form-check-label" for="contraceptive2">
+            Não
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Histórico familiar (Parentes de primeiro grau) de câncer? </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="first_deg_relatives" id="first_deg_relatives1" value=1 required>
+          <label class="form-check-label" for="first_deg_relatives1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="first_deg_relatives" id="first_deg_relatives2" value=0 required>
+          <label class="form-check-label" for="first_deg_relatives2">
+            Não
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Já realizou teste gênético, caso sim, detectada alguma alteração? </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="genetic_test" id="genetic_test1" value=1 required>
+          <label class="form-check-label" for="genetic_test1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="genetic_test" id="genetic_test2" value=0 required>
+          <label class="form-check-label" for="genetic_test2">
+            Não
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Já realizou radioterapia na região do toráx? </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="torax_radio" id="torax_radio1" value=1 required>
+          <label class="form-check-label" for="torax_radio1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="torax_radio" id="torax_radio2" value=0 required>
+          <label class="form-check-label" for="torax_radio2">
+            Não
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="menopause">Carga horária atividade física por semana:</label>
+        <input type="text" class="form-control" id="physical_activity" name="physical_activity" required>
+      </div>
+
+      <div class="form-group">
+        <label>Já realizou cirurgia retirada dos ovários? </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ovarian_surgery" id="ovarian_surgery1" value=1 required>
+          <label class="form-check-label" for="ovarian_surgery1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ovarian_surgery" id="ovarian_surgery2" value=0 required>
+          <label class="form-check-label" for="ovarian_surgery2">
+            Não
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Já necessitou fazer biópsia de mama? </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ever_had_biopsy" id="ever_had_biopsy1" value=1 required>
+          <label class="form-check-label" for="ever_had_biopsy1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ever_had_biopsy" id="ever_had_biopsy2" value=0 required>
+          <label class="form-check-label" for="ever_had_biopsy2">
+            Não
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Mamas Densas? </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="breast_density" id="breast_density1" value=1 required>
+          <label class="form-check-label" for="breast_density1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="breast_density" id="breast_density2" value=0 required>
+          <label class="form-check-label" for="breast_density2">
+            Não
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Já fez uso de reposição hormonal? </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hormonal" id="hormonal1" value=1 required>
+          <label class="form-check-label" for="hormonal1">
+            Sim
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hormonal" id="hormonal2" value=0 required>
+          <label class="form-check-label" for="hormonal2">
+            Não
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="menopause">Bebe bebida alcoólica? Quantas porções por semana?</label>
+        <input type="number" class="form-control" id="alcohol" name="alcohol" required>
+      </div>
+      
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
